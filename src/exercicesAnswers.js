@@ -16,6 +16,8 @@ let concatenateSentences = function (firstSentence, secondSentence) {
 //Exercice 4 : Afficher le cinquième caractère de la chaîne.
 let displayFifthCharacter = function (sentence) {
   return sentence.substr(4, 1);
+  return sentence.charAt(4)
+  return sentence[4]
 }
 
 //Exercice 5 : Afficher les 9 premiers caractère.
@@ -82,16 +84,19 @@ let displayAbsoluteValues = function (numbersArray) {
   console.log(typeof numbersArray)
   console.log(numbersArray)
   console.log(numbersArray.valueOf())
-  return numbersArray.valueOf(Math.abs(numbersArray));
+  return numbersArray.map(Math.abs);
+  return numbersArray.valueOf(Math.abs);
 }
 
 //Exercice 16 : Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche.
 let calculateArea = function (radius) {
   console.log(radius)
   return Math.round(Math.PI * radius * radius);
+  return Math.round(Math.PI * Math.pow(radius,2));
 }
 
 //Exercice 17 : Calculer l'hypothènuse d\'un triangle rectangle. Arrondir à l'entier inférieur.
 let calculateHypotenuse = function (a, b) {
   return Math.floor(Math.hypot(a, b));
+  return Math.floor(Math.sqrt(Math.pow(a,2) + Math.pow(b,2)));
 }
